@@ -47,7 +47,7 @@ def create_image_matrix(data):
     Create the V matrix from the LFW image dataset.
     Return the V matrix with size (n_features, n_samples).
     """
-    return np.reshape(data, (data.shape[0], -1)).T
+    return np.reshape(data, (data.shape[0], -1))
 
 def plot_50_images(V, image_shape):
     """
